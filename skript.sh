@@ -1,9 +1,9 @@
 #!/bin/bash
-mkdir /home/alenpihler/Namizje
-mkdir /home/alenpihler/Dokumenti
-mkdir /home/alenpihler/Prenosi
-mkdir /home/alenpihler/Slike
-mkdir /home/alenpihler/Video
+sudo mkdir /home/alenpihler/Namizje
+sudo mkdir /home/alenpihler/Dokumenti
+sudo mkdir /home/alenpihler/Prenosi
+sudo mkdir /home/alenpihler/Slike
+sudo mkdir /home/alenpihler/Video
 
 for i in {1..5}
 do 
