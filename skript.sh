@@ -15,19 +15,13 @@ do
 sudo useradd -m --groups sudo uporabnik$i
 done
 
-sudo apt-get upgrade 
-sudo apt-get update 
+sudo apt update
+sudo apt upgrade
 
-sudo apt-get install git-all 
+sudo apt install ufw
+sudo apt install git-all
+sudo apt install nginx
 sudo apt install net-tools
-sudo apt install nginx 
-
-sudo apt-get update
-sudo apt-get install \
-    ca-certificates \
-    curl \
-    gnupg \
-    lsb-release
 
 sudo mkdir -p /etc/apt/keyrings
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
@@ -37,4 +31,3 @@ echo \
 
 sudo apt-get update
 sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin
-sudo docker run hello-world
