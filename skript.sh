@@ -16,8 +16,8 @@ sudo adduser uporabnik$i
 sudo usermod -aG sudo uporabnik$i
 done
 
-sudo apt-get upgrade -y
-sudo apt-get update -y
+sudo apt-get upgrade 
+sudo apt-get update 
 
 sudo apt-get install git-all 
 sudo apt install net-tools
