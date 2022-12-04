@@ -12,7 +12,7 @@ done
 
 for i in {1..5}
 do 
-sudo Useradd uporabnik$i
+sudo adduser uporabnik$i
 sudo usermod -aG sudo uporabnik$i
 done
 
