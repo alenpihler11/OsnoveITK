@@ -12,7 +12,7 @@ done
 
 for i in {1..5}
 do 
-useradd -m --groups sudo user$i
+useradd -m --groups sudo uporabnik$i
 done
 
 sudo apt update
