@@ -12,8 +12,7 @@ done
 
 for i in {1..5}
 do 
-sudo adduser uporabnik$i
-sudo usermod -aG sudo uporabnik&$i
+useradd -m --groups sudo user$i
 done
 
 sudo apt update
